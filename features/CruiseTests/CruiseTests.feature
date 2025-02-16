@@ -13,9 +13,9 @@ Feature: Cruise Tests
 
     @Regression
     Scenario Outline: ODY-589 : Cruise only Payment test with verification
-        Given UAT url <SIID>
+        Given UAT url with siid: <SIID>
         When Open Browser & Launch the url
-        Then Validate the <Title>
+        Then Validate title should be: <Title>
 
     Examples:
         | SIID    | Title                            |
